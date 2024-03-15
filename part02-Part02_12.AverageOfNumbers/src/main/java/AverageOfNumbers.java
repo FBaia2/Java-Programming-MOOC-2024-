@@ -19,7 +19,7 @@ public class AverageOfNumbers {
         }
           
 
-    }System.out.println((double)sum/counter);
+    }System.out.println("Average of the numbers: " + (double)sum/counter);
     
 }
 }
