@@ -3,34 +3,59 @@ public class StarSign {
 
     public static void main(String[] args) {
 
-        
-        //The tests are not checking the main, so you can modify it freely.
-        //NB: If the tests don't seem to pass, you should try the methods here
-        //in the main to make sure they print the correct shapes!
-        
-        printStars(3);
-        System.out.println("\n---");  // printing --- between the shapes
-        printSquare(4);
-        System.out.println("\n---");
-        printRectangle(5, 6);
-        System.out.println("\n---");
+        // The tests are not checking the main, so you can modify it freely.
+        // NB: If the tests don't seem to pass, you should try the methods here
+        // in the main to make sure they print the correct shapes!
+
+        // printStars(3);
+        // System.out.println("\n---"); // printing --- between the shapes
+        // printSquare(4);
+        // System.out.println("\n---");
+        // printRectangle(5, 6);
+        // System.out.println("\n---");
         printTriangle(3);
-        System.out.println("\n---");
+        // System.out.println("\n---");
     }
 
     public static void printStars(int number) {
+        for (int i = 0; i < number; i++) {
+            System.out.print("*");
+        }
+        System.out.println();
         // first part of the exercise
     }
 
     public static void printSquare(int size) {
-        // second part of the exercise
+        int counter = 0;
+        int sm = size * size;
+        for (int i = 0; i < sm; i++) {
+            System.out.print("*");
+            counter += 1;
+            if (counter == size) {
+                System.out.println();
+                counter = 0;
+            }
+        }
     }
 
     public static void printRectangle(int width, int height) {
-        // third part of the exercise
+        for (int i = 0; i < height; i++) {
+            for (int j = 0; j < width; j++) {
+                System.out.print("*");
+
+            }
+            System.out.println();
+        }
     }
 
     public static void printTriangle(int size) {
-        // fourth part of the exercise
+        for(int i = 0; i < size; i++) {
+            for(int j = 0; j <= i; j++){
+                System.out.print("*");
+            
+        }
+        System.out.println();
     }
+
+}
 }
