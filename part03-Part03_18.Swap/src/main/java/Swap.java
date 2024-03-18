@@ -20,7 +20,10 @@ public class Swap {
         System.out.println("Give two indices to swap:");
         int num1 = Integer.valueOf(scanner.nextLine());
         int num2 = Integer.valueOf(scanner.nextLine());
-
+        int hold = array[num1];
+        array[num1] = array[num2];
+        array[num2] = hold;
+        
         // Implement here
         // asking for the two indices
         // and then swapping them
