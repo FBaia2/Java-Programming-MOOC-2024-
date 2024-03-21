@@ -2,6 +2,7 @@
 public class MainProgram {
 
     public static void main(String[] args) {
-        // Test your counter here
+        Counter n = new Counter();
+        System.out.println(n.value());
     }
 }

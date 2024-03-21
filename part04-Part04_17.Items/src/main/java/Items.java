@@ -15,13 +15,12 @@ public class Items {
             if (name.isEmpty()) {
                 break;
             }
-            
+
             items.add(new Item(name));
 
-            
         }
-    for(Items item: items){
-        System.out.println(item);
+        for (Item i : items) {
+            System.out.println(i);
+        }
     }
-}
 }
