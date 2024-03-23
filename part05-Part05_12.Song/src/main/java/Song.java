@@ -1,3 +1,4 @@
+import java.util.Objects;
 
 public class Song {
 
@@ -11,10 +12,47 @@ public class Song {
         this.durationInSeconds = durationInSeconds;
     }
 
+    public String getArtist() {
+        return artist;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public int getDurationInSeconds() {
+        return durationInSeconds;
+    }
+
+    @Override
+    public boolean equals(Object compared) {
+        // if the variables are located in the same position, they are equal
+        if (this == compared) {
+            return true;
+        }
+
+        // if the compared object is not of type Song, the objects are not equal
+        if (!(compared instanceof Song)) {
+            return false;
+        }
+
+        // convert the object into a Song object
+        Song comparedSong = (Song) compared;
+
+        // if the values of the object variables are equal, the objects are equal
+        if (this.artist.equals(comparedSong.artist) &&
+            this.name.equals(comparedSong.name) &&
+            this.durationInSeconds == comparedSong.durationInSeconds) {
+            return true;
+        }
+
+        // otherwise the objects are not equal
+        return false;
+    }
+
     @Override
     public String toString() {
         return this.artist + ": " + this.name + " (" + this.durationInSeconds + " s)";
     }
-
-
 }
+

@@ -17,4 +17,28 @@ public class Book {
         return publicationYear;
     }
 
+    public boolean equals(Object compared) {
+        // if the variables are located in the same position, they are equal
+        if (this == compared) {
+            return true;
+        }
+
+        // if the compared object is not of type Book, the objects are not equal
+        if (!(compared instanceof Book)) {
+            return false;
+        }
+
+        // convert the object to a Book object
+        Book comparedBook = (Book) compared;
+
+        // if the values of the object variables are equal, the objects are, too
+        return this.name.equals(comparedBook.name);
+
+    }
+
+    @Override
+    public int hashCode() {
+        return name.hashCode();
+    }
+
 }

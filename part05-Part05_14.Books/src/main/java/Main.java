@@ -17,8 +17,13 @@ public class Main {
 
             System.out.println("Publication year:");
             int publicationYear = Integer.valueOf(scanner.nextLine());
-            Book book = new Book(name, publicationYear);
-            books.add(book);
+                Book book = new Book(name, publicationYear);
+                if (books.contains(book)) {
+                } else {
+                books.add(book);
+
+            }
+           
 
         }
         

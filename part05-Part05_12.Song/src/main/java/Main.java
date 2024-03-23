@@ -7,12 +7,13 @@ public class Main {
         Song jackSparrow = new Song("The Lonely Island", "Jack Sparrow", 196);
         Song anotherSparrow = new Song("The Lonely Island", "Jack Sparrow", 196);
 
-        if (jackSparrow.equals(anotherSparrow)) {
+        if (jackSparrow.toString().equals(anotherSparrow.toString())) {
             System.out.println("Songs are equal.");
         }
 
         if (jackSparrow.equals("Another object")) {
             System.out.println("Strange things are afoot.");
         }
+
     }
 }
