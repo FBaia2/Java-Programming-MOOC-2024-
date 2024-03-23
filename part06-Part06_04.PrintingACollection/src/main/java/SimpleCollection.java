@@ -18,5 +18,26 @@ public class SimpleCollection {
     public ArrayList<String> getElements() {
         return this.elements;
     }
+    @Override
+    public String toString() {
+
+        String printOutput = "The collection "+name+" is empty. ";
+
+
+        if (elements.isEmpty()) {
+            return printOutput;
+        }
+
+
+        // we form a string from the people on the list
+        String letas = "";
+
+        for (String a : elements) {
+            letas = letas + a + "\n";
+        }
+
+        return "The collection "+name+" has "+elements.size()+
+        " element:" + "\n" + letas;
+    }
     
 }
