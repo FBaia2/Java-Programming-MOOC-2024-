@@ -6,4 +6,15 @@ public class Gift {
         this.name = name;
         this.weight = weight;
     }
+    public String getName() {
+        return name;
+    }
+    public int getWeight() {
+        return weight;
+    }
+    public String toString() {
+        return ""+name+" ("+weight+" kg)";
+    }
+
+
 }
