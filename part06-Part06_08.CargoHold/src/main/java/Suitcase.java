@@ -27,6 +27,9 @@ public class Suitcase {
         return sumOfWeights;
 
     }
+    public ArrayList<Item> getItems() {
+        return this.items;
+    }
 
 
     public Item heaviestItem() {
