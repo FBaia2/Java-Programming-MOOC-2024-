@@ -46,7 +46,9 @@ public class UserInterface {
 
             grade = grade - 1;
         }
-        
+        System.out.println("The average of points: " + this.register.averageOfGrades());
+        System.out.println("The average of grades: " + this.register.averageOfPoints());
+
     }
 
     public static void printsStars(int stars) {
